@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/md_blue_900">
+
+    <ImageView
+        android:id="@+id/ivTrackingImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDelRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="del"
+        android:textSize="16dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAvgSpeedInf" />
+
+    <TextView
+        android:id="@+id/tvMoreInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="inf"
+        android:textSize="16dp"
+        android:paddingEnd="25dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/tvDelRun"
+        app:layout_constraintTop_toTopOf="@+id/tvDelRun" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDateInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="DATE"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeInf"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTrackingImg" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTimeInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TIME"
+        app:layout_constraintEnd_toStartOf="@+id/tvDistanceInf"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDateInf"
+        app:layout_constraintTop_toBottomOf="@+id/ivTrackingImg" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDistanceInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="DISTANCE"
+        app:layout_constraintEnd_toStartOf="@+id/tvAvgSpeedInf"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTimeInf"
+        app:layout_constraintTop_toBottomOf="@+id/ivTrackingImg" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvAvgSpeedInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="AVGSPEED"
+        app:layout_constraintEnd_toStartOf="@+id/tvCaloriesInf"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDistanceInf"
+        app:layout_constraintTop_toBottomOf="@+id/ivTrackingImg" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCaloriesInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CALORIES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvAvgSpeedInf"
+        app:layout_constraintTop_toBottomOf="@+id/ivTrackingImg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
